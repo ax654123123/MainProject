@@ -1,0 +1,18 @@
+PODS:
+  - CTMediator (12)
+  - TestA (1.1.1)
+  - TestA_Category (1.1.0):
+    - CTMediator
+
+DEPENDENCIES:
+  - TestA
+  - TestA_Category
+
+SPEC CHECKSUMS:
+  CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
+  TestA: 992c3f32feb8821e630de527368de0247aea5843
+  TestA_Category: 4b70de04e5629ac80a7d05bf7fd25122b1506995
+
+PODFILE CHECKSUM: b244489f0dedfaaaa5bb1e2619651d9eb35d5c6e
+
+COCOAPODS: 1.2.1

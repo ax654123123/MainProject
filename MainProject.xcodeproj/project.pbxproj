@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A9D366361BBD1E3F683D0E5 /* libPods-MainProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 303CDFD87010ED646D108FB7 /* libPods-MainProject.a */; };
 		F89AA87D1F724B5200B989D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F89AA87C1F724B5200B989D7 /* AppDelegate.m */; };
 		F89AA8801F724B5200B989D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89AA87F1F724B5200B989D7 /* ViewController.m */; };
 		F89AA8831F724B5200B989D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89AA8811F724B5200B989D7 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001B04DA8F3898C2338D0110 /* Pods-MainProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MainProject/Pods-MainProject.debug.xcconfig"; sourceTree = "<group>"; };
+		1171E46AF737804988E225CA /* Pods-MainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MainProject/Pods-MainProject.release.xcconfig"; sourceTree = "<group>"; };
+		303CDFD87010ED646D108FB7 /* libPods-MainProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89AA8781F724B5200B989D7 /* MainProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89AA87B1F724B5200B989D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F89AA87C1F724B5200B989D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9D366361BBD1E3F683D0E5 /* libPods-MainProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B25F4A76267853C81620B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				001B04DA8F3898C2338D0110 /* Pods-MainProject.debug.xcconfig */,
+				1171E46AF737804988E225CA /* Pods-MainProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F58104278984CA6E87356AD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				303CDFD87010ED646D108FB7 /* libPods-MainProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F89AA86F1F724B5200B989D7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				F89AA8931F724B5200B989D7 /* MainProjectTests */,
 				F89AA89E1F724B5200B989D7 /* MainProjectUITests */,
 				F89AA8791F724B5200B989D7 /* Products */,
+				37B25F4A76267853C81620B4 /* Pods */,
+				F58104278984CA6E87356AD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F89AA8A41F724B5200B989D7 /* Build configuration list for PBXNativeTarget "MainProject" */;
 			buildPhases = (
+				22869A690CF71CF01DC4A8F9 /* [CP] Check Pods Manifest.lock */,
 				F89AA8741F724B5200B989D7 /* Sources */,
 				F89AA8751F724B5200B989D7 /* Frameworks */,
 				F89AA8761F724B5200B989D7 /* Resources */,
+				E1BEEB1D507522A606703463 /* [CP] Embed Pods Frameworks */,
+				886725C86582102865352FAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22869A690CF71CF01DC4A8F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		886725C86582102865352FAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MainProject/Pods-MainProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1BEEB1D507522A606703463 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MainProject/Pods-MainProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F89AA8741F724B5200B989D7 /* Sources */ = {
@@ -428,10 +503,12 @@
 		};
 		F89AA8A51F724B5200B989D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001B04DA8F3898C2338D0110 /* Pods-MainProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = InstallApp.MainProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,10 +518,12 @@
 		};
 		F89AA8A61F724B5200B989D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1171E46AF737804988E225CA /* Pods-MainProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = InstallApp.MainProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
