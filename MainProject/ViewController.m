@@ -12,6 +12,8 @@
 
 #import <TestA_Category/CTMediator+TestA.h>
 
+#import <TestB_Category/CTMediator+TestB.h>
+
 #import <CTMediator/CTMediator.h>
 
 @interface ViewController ()
@@ -35,11 +37,22 @@
 
     
     UIViewController *viewController = [[CTMediator sharedInstance] viewControllerTestA];
-    viewController.view.backgroundColor = [UIColor redColor];
-    [self presentViewController:viewController animated:YES completion:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [self presentViewController:nav animated:YES completion:nil];
     
 //    [[CTMediator sharedInstance] tsetAShowAlert];
 
+}
+- (IBAction)clickTestB:(id)sender {
+    
+//    [[CTMediator sharedInstance] tsetBShowAlert];
+//    
+//    return;
+    
+    UIViewController *viewController = [[CTMediator sharedInstance] viewControllerTestB];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [self presentViewController:nav animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {

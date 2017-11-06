@@ -1,0 +1,28 @@
+{
+  "name": "TestB_Category",
+  "version": "1.0.0",
+  "summary": "TestB_Category.",
+  "description": "this is TestB_Category",
+  "homepage": "https://github.com/ax654123123/TestB_Category.git",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "CasaTaloyum": "casatwy@msn.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/ax654123123/TestB_Category.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "TestB_Category/TestB_Category/**/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "CTMediator": [
+
+    ]
+  }
+}

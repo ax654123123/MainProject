@@ -1,0 +1,28 @@
+{
+  "name": "TestA_Category",
+  "version": "1.1.0",
+  "summary": "TestA_Category.",
+  "description": "this is TestA_Category",
+  "homepage": "https://github.com/ax654123123/TestA_Category",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "CasaTaloyum": "casatwy@msn.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/ax654123123/TestA_Category.git",
+    "tag": "1.1.0"
+  },
+  "source_files": "TestA_Category/TestA_Category/**/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "CTMediator": [
+
+    ]
+  }
+}

@@ -8,6 +8,8 @@
 
 #import "TestAViewController.h"
 
+#import <TestB_Category/CTMediator+TestB.h>
+
 @interface TestAViewController ()
 
 @end
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"A"; 
+    
+    self.view.backgroundColor = [UIColor redColor];
+
     
     UIButton *button = [UIButton buttonWithType:0];
     button.backgroundColor = [UIColor blackColor];
@@ -28,7 +35,7 @@
     UIButton *button1 = [UIButton buttonWithType:0];
     button1.backgroundColor = [UIColor blackColor];
     button1.frame = CGRectMake(0, 200, 100, 100);
-    [button1 addTarget:self action:@selector(goBock1) forControlEvents:UIControlEventTouchUpInside];
+    [button1 addTarget:self action:@selector(goBViewController) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];
     
 }
@@ -40,17 +47,28 @@
 
 - (void)goBock
 {
-    [self dismissViewControllerAnimated:YES completion:^{}];
+    if (![self isMemberOfClass:[UIViewController class]])
+    {
+        if (self.parentViewController.childViewControllers.count>1) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+        else{
+            if (self.presentingViewController) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+        }
+    }
 }
 
-- (void)goBock1
+- (void)goBViewController
 {
-    
+   UIViewController *controller =  [[CTMediator sharedInstance] viewControllerTestB];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)testShow
 {
-    UIAlertView *ale = [[UIAlertView alloc] initWithTitle:@"tsetAShowAlert" message:@"" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    UIAlertView *ale = [[UIAlertView alloc] initWithTitle:@"tsetAShowAlert" message:@"AAAAAA" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
     [ale show];
 }
 
