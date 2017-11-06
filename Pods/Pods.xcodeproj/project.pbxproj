@@ -44,13 +44,6 @@
 			remoteGlobalIDString = 5732AB7B82F4562C552FDAD06B943A82;
 			remoteInfo = CTMediator;
 		};
-		4E243FC1B1BC723DB48DBE0DFBF0B286 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA9A6458209D83AAC65E8A7BDCA2526E;
-			remoteInfo = TestB_Category;
-		};
 		522C437F776EF69C7D53CE2F4BA984AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -113,13 +106,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 49086296CF26D1A84764BD3780EB7804;
 			remoteInfo = TestA_Category;
-		};
-		F6F624D80666A6C3519F5F361FAF366A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C1ECD9AB274948DF393291E5CD4923FB;
-			remoteInfo = TestA;
 		};
 		F72586D3B8833FB316F391502A49B057 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -654,9 +640,7 @@
 			);
 			dependencies = (
 				40C3AA39473596348C3A12A0BAB007FA /* PBXTargetDependency */,
-				208FB72DB7B8F097985116E03CE1DABF /* PBXTargetDependency */,
 				3C6D9175D9B168EAAD3537EB06BDD9D0 /* PBXTargetDependency */,
-				310451BF1B9E890E98A35695A09E7D99 /* PBXTargetDependency */,
 			);
 			name = TestB;
 			productName = TestB;
@@ -776,18 +760,6 @@
 			name = TestA;
 			target = C1ECD9AB274948DF393291E5CD4923FB /* TestA */;
 			targetProxy = 54B4AAD8B68FBFB886B6535BF66D6A51 /* PBXContainerItemProxy */;
-		};
-		208FB72DB7B8F097985116E03CE1DABF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TestA;
-			target = C1ECD9AB274948DF393291E5CD4923FB /* TestA */;
-			targetProxy = F6F624D80666A6C3519F5F361FAF366A /* PBXContainerItemProxy */;
-		};
-		310451BF1B9E890E98A35695A09E7D99 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TestB_Category;
-			target = FA9A6458209D83AAC65E8A7BDCA2526E /* TestB_Category */;
-			targetProxy = 4E243FC1B1BC723DB48DBE0DFBF0B286 /* PBXContainerItemProxy */;
 		};
 		3C6D9175D9B168EAAD3537EB06BDD9D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

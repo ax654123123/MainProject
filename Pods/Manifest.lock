@@ -4,8 +4,7 @@ PODS:
     - TestB_Category
   - TestA_Category (1.1.0):
     - CTMediator
-  - TestB (1.1.1):
-    - TestA
+  - TestB (1.1.5):
     - TestA_Category
   - TestB_Category (1.0.0):
     - CTMediator
@@ -30,9 +29,9 @@ SPEC CHECKSUMS:
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
   TestA: f8684bc7bb46cdd0124f4ecf8073b19b0f08cd33
   TestA_Category: 7f0cb65f9ce7700f488153e1f2b8b9fcbe27673c
-  TestB: 39b6bb6c2e6a4d8f12df423d0ed344201d9edf6d
+  TestB: c2bc9c132607b385e5fa835bdb56533cd8f97b12
   TestB_Category: 4aa82919f80a3c646d1dae29a30e990c8ed64d25
 
-PODFILE CHECKSUM: 49bbe8904cdc2e0f2380194a199612904e064dd2
+PODFILE CHECKSUM: 0bb41fe69bebc047017b3cbe05af3c4f67d9cb18
 
 COCOAPODS: 1.2.1

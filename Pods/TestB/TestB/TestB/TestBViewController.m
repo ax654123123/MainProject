@@ -8,6 +8,8 @@
 
 #import "TestBViewController.h"
 
+//#import <TestA_Category/CTMediator+TestA.h>
+
 @interface TestBViewController ()
 
 @end
@@ -18,20 +20,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"B";
+    
     self.view.backgroundColor = [UIColor blueColor];
     
     UIButton *button = [UIButton buttonWithType:0];
     button.backgroundColor = [UIColor blackColor];
-    button.frame = CGRectMake(0, 0, 100, 100);
+    button.frame = CGRectMake(0, 100, 100, 100);
+    [button setTitle:@"返回" forState:UIControlStateNormal];
+
     [button addTarget:self action:@selector(goBock) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
     
     UIButton *button1 = [UIButton buttonWithType:0];
     button1.backgroundColor = [UIColor blackColor];
-    button1.frame = CGRectMake(0, 200, 100, 100);
-    [button1 addTarget:self action:@selector(goBock1) forControlEvents:UIControlEventTouchUpInside];
+    button1.frame = CGRectMake(0, 250, 100, 100);
+    [button1 setTitle:@"push A" forState:UIControlStateNormal];
+
+    [button1 addTarget:self action:@selector(clickPushA:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];
+    
+    UIButton *button2 = [UIButton buttonWithType:0];
+    button2.backgroundColor = [UIColor blackColor];
+    button2.frame = CGRectMake(200, 300, 100, 100);
+    [button2 setTitle:@"调用A函数" forState:UIControlStateNormal];
+
+    [button2 addTarget:self action:@selector(showA) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button2];
     
 }
 
@@ -39,15 +55,34 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)showA
+{
+//    [[CTMediator sharedInstance] tsetAShowAlert];
+}
 - (void)goBock
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    
+    if (![self isMemberOfClass:[UIViewController class]])
+    {
+        if (self.parentViewController.childViewControllers.count>1) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+        else{
+            if (self.presentingViewController) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+        }
+    }
 }
 
 - (void)goBock1
 {
     
+}
+- (void)clickPushA:(id)sender {
+    
+//    UIViewController *controller = [[CTMediator sharedInstance] viewControllerTestA];
+//    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)testShow
@@ -57,3 +92,4 @@
 }
 
 @end
+

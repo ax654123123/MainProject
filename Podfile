@@ -12,7 +12,7 @@ target 'MainProject' do
   pod "TestA", :path => "../TestA"
   pod "TestB_Category", :path => "../TestB_Category"
   pod "TestB", :path => "../TestB"
-  
+
   #pod "BaseComponent"
 #  pod "TestA_Category"
 #  pod "TestA"
