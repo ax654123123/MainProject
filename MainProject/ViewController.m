@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-//#import <BaseComponent/OBikeSeversHeader.h>
+#import <BaseComponent/OBikeSeversHeader.h>
 
 #import <TestA_Category/CTMediator+TestA.h>
 
@@ -25,11 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    [OBikeSevers refreshTokenWithRefreshToken:@"" success:^(id objModel) {
-//
-//    } Failure:^(NSError *error) {
-//
-//    }];
+    [OBikeSevers refreshTokenWithRefreshToken:@"" success:^(id objModel) {
+
+    } Failure:^(NSError *error) {
+
+    }];
     
 }
 

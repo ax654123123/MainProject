@@ -10,6 +10,8 @@
 
 #import <TestB_Category/CTMediator+TestB.h>
 
+#import <BaseComponent/OBikeSevers.h>
+
 @interface TestAViewController ()
 
 @end
@@ -81,6 +83,13 @@
 - (void)showB
 {
     [[CTMediator sharedInstance] tsetBShowAlert];
+    
+    [OBikeSevers refreshTokenWithRefreshToken:@"" success:^(id objModel) {
+        
+    } Failure:^(NSError *error) {
+        
+    }];
+    
 }
 
 - (void)testShow

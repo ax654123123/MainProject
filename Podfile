@@ -13,7 +13,7 @@ target 'MainProject' do
 #  pod "TestB_Category", :path => "../TestB_Category"
 #  pod "TestB", :path => "../TestB"
 
-  #pod "BaseComponent"
+  pod "BaseComponent"
   pod "TestA_Category"
   pod "TestA"
   pod "TestB_Category"
