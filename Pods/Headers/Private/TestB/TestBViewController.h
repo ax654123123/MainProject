@@ -1,1 +1,1 @@
-../../../../../TestB/TestB/TestB/TestBViewController.h
+../../../TestB/TestB/TestB/TestBViewController.h

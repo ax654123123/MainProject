@@ -1,37 +1,32 @@
 PODS:
   - CTMediator (12)
-  - TestA (1.1.4):
+  - SDWebImage (4.2.1):
+    - SDWebImage/Core (= 4.2.1)
+  - SDWebImage/Core (4.2.1)
+  - TestA (1.1.5):
     - TestB_Category
   - TestA_Category (1.1.0):
     - CTMediator
-  - TestB (1.1.5):
+  - TestB (5):
+    - SDWebImage
     - TestA_Category
   - TestB_Category (1.0.0):
     - CTMediator
 
 DEPENDENCIES:
-  - TestA (from `../TestA`)
-  - TestA_Category (from `../TestA_Category`)
-  - TestB (from `../TestB`)
-  - TestB_Category (from `../TestB_Category`)
-
-EXTERNAL SOURCES:
-  TestA:
-    :path: ../TestA
-  TestA_Category:
-    :path: ../TestA_Category
-  TestB:
-    :path: ../TestB
-  TestB_Category:
-    :path: ../TestB_Category
+  - TestA
+  - TestA_Category
+  - TestB
+  - TestB_Category
 
 SPEC CHECKSUMS:
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
-  TestA: f8684bc7bb46cdd0124f4ecf8073b19b0f08cd33
-  TestA_Category: 7f0cb65f9ce7700f488153e1f2b8b9fcbe27673c
-  TestB: c2bc9c132607b385e5fa835bdb56533cd8f97b12
-  TestB_Category: 4aa82919f80a3c646d1dae29a30e990c8ed64d25
+  SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
+  TestA: 90b236d892e301ccc7ace2f454afc29af54a3f6a
+  TestA_Category: 4b70de04e5629ac80a7d05bf7fd25122b1506995
+  TestB: 9b9e8013fae97dd2b2db595675655b241cd08f68
+  TestB_Category: 7a61715a3ba386df5b9efc81b0ef35d18590fbc5
 
-PODFILE CHECKSUM: 0bb41fe69bebc047017b3cbe05af3c4f67d9cb18
+PODFILE CHECKSUM: ebe55095536e04140093a3ff2fd3a01b7bfbc038
 
 COCOAPODS: 1.2.1
