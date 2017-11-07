@@ -22,7 +22,7 @@
     
     self.title = @" B ";
     
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor redColor];
     
     
     UIButton *button = [UIButton buttonWithType:0];
@@ -85,7 +85,7 @@
 
 - (void)testShow
 {
-    UIAlertView *ale = [[UIAlertView alloc] initWithTitle:@"tsetBShowAlert" message:@"BBBBBBB" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    UIAlertView *ale = [[UIAlertView alloc] initWithTitle:@"tsetAShowAlert" message:@"AAAAAA" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
     [ale show];
 }
 

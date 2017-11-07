@@ -7,7 +7,7 @@ PODS:
     - TestB_Category
   - TestA_Category (1.1.0):
     - CTMediator
-  - TestB (5):
+  - TestB (6):
     - SDWebImage
     - TestA_Category
   - TestB_Category (1.0.0):
@@ -24,9 +24,9 @@ SPEC CHECKSUMS:
   SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
   TestA: 90b236d892e301ccc7ace2f454afc29af54a3f6a
   TestA_Category: 4b70de04e5629ac80a7d05bf7fd25122b1506995
-  TestB: 9b9e8013fae97dd2b2db595675655b241cd08f68
+  TestB: 3d09762c508fba9b3cf43c410790128efb3ed483
   TestB_Category: 7a61715a3ba386df5b9efc81b0ef35d18590fbc5
 
 PODFILE CHECKSUM: ebe55095536e04140093a3ff2fd3a01b7bfbc038
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
