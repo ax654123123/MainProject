@@ -41,6 +41,6 @@
                              success:(Success)successBlock
                              Failure:(Failure)failBlock
 {
-    NSLog(@"severs refreshTokenWithRefreshToken");
+    
 }
 @end

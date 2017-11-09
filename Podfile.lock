@@ -17,21 +17,21 @@ PODS:
   - BaseComponent (1):
     - AFNetworking
   - CTMediator (12)
-  - SDWebImage (4.2.1):
-    - SDWebImage/Core (= 4.2.1)
-  - SDWebImage/Core (4.2.1)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
   - TestA (1.1.5):
     - TestB_Category
   - TestA_Category (1.1.0):
     - CTMediator
-  - TestB (8):
+  - TestB (10):
+    - BaseComponent
     - SDWebImage
     - TestA_Category
   - TestB_Category (1.0.0):
     - CTMediator
 
 DEPENDENCIES:
-  - BaseComponent
   - TestA
   - TestA_Category
   - TestB
@@ -41,12 +41,12 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BaseComponent: 01818efae992c0f6295d9d442d63f4987d96fbfd
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
-  SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   TestA: 90b236d892e301ccc7ace2f454afc29af54a3f6a
   TestA_Category: 4b70de04e5629ac80a7d05bf7fd25122b1506995
-  TestB: 603dd657c6c91878b8e82ea628eaff094ce0b229
+  TestB: 73a680925f80d662fd31e270684806587331cfe9
   TestB_Category: 7a61715a3ba386df5b9efc81b0ef35d18590fbc5
 
-PODFILE CHECKSUM: 24d370e9cc7abc3099db1c296bcd9b80820373fb
+PODFILE CHECKSUM: 60d487a9d5ee15031b87d3065ab440838c39b335
 
 COCOAPODS: 1.3.1

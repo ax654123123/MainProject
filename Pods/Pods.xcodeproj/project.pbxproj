@@ -214,6 +214,13 @@
 			remoteGlobalIDString = 5732AB7B82F4562C552FDAD06B943A82;
 			remoteInfo = CTMediator;
 		};
+		5B585A0D71126B963DD05BB7E688DD5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4734F8C77F47D9A74F88B07AE021DD8;
+			remoteInfo = BaseComponent;
+		};
 		738C1A800D16544E8E10CA0347FE7333 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -248,6 +255,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4FE5D10A6BF73C6EA28123DA1C19BAEE;
 			remoteInfo = SDWebImage;
+		};
+		E2C1478EC55AAD005ACF7E9A787EC3EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
+			remoteInfo = AFNetworking;
 		};
 		E4C698C9435F4A5DA09EB57A54D5C9E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1114,6 +1128,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				29F5F6C15F34B28B8C239A132E1BF99E /* PBXTargetDependency */,
+				C16091BA67348F941D55079E4619890E /* PBXTargetDependency */,
 				3F49A11FB40601FF32A09A1FA726E511 /* PBXTargetDependency */,
 				CA6A9C1FC218F38E23E240134F068D66 /* PBXTargetDependency */,
 				7551E3B759315AB7055417C418E2B29E /* PBXTargetDependency */,
@@ -1374,6 +1390,12 @@
 			target = 4FE5D10A6BF73C6EA28123DA1C19BAEE /* SDWebImage */;
 			targetProxy = D972386E70C4C29AD6E1655716C7F314 /* PBXContainerItemProxy */;
 		};
+		29F5F6C15F34B28B8C239A132E1BF99E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
+			targetProxy = E2C1478EC55AAD005ACF7E9A787EC3EB /* PBXContainerItemProxy */;
+		};
 		352D5A4B4907D31D99FF6B41144F965D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TestA;
@@ -1427,6 +1449,12 @@
 			name = CTMediator;
 			target = 5732AB7B82F4562C552FDAD06B943A82 /* CTMediator */;
 			targetProxy = 738C1A800D16544E8E10CA0347FE7333 /* PBXContainerItemProxy */;
+		};
+		C16091BA67348F941D55079E4619890E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaseComponent;
+			target = C4734F8C77F47D9A74F88B07AE021DD8 /* BaseComponent */;
+			targetProxy = 5B585A0D71126B963DD05BB7E688DD5A /* PBXContainerItemProxy */;
 		};
 		C34D1652C37D2CFF30CF0900091A5333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

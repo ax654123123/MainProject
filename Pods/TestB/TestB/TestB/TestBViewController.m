@@ -22,7 +22,7 @@
     
     self.title = @" B ";
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor blueColor];
     
     
     UIButton *button = [UIButton buttonWithType:0];
